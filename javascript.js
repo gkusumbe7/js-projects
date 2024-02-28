@@ -7,4 +7,5 @@ divBox.style.fontSize='18px';
 divBox.style.fontWeight='bold';
 divBox.style.height='200px';
 divBox.style.width='300px';
+divBox.style.color='rgb(0,0,255)';
 
