@@ -4,8 +4,8 @@ let lightMode = document.querySelector('.light-btn');
 lightMode.addEventListener('click',function(){
     let bodyWhite = document.querySelector('body');
     bodyWhite.style.backgroundColor = 'white';
-    let mainText = document.querySelector('.main-text');
-    mainText.style.color = 'black';
+    // let mainText = document.querySelector('.main-text');
+    // mainText.style.color = 'black';
     let moveScrollButton = document.querySelector('.scroll-btn');
     let currPostion = parseInt(window.getComputedStyle(moveScrollButton).getPropertyValue('right'));
     console.log(currPostion);
@@ -22,7 +22,9 @@ darkMode.addEventListener('click',function(){
     let bodyBalck = document.querySelector('body');
     bodyBalck.style.backgroundColor = 'black';
     let mainText = document.querySelector('.main-text');
+
     mainText.classList.toggle('red-text');
+
     let moveScrollButton = document.querySelector('.scroll-btn');
 
     let currPostion = parseInt(window.getComputedStyle(moveScrollButton).getPropertyValue('left'));
