@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+        .button{    
+            position: relative;
+            display: flex;
+            padding: 5px;
+            padding-bottom: 10px;
+            justify-content: space-between;
+            background-color: black;
+            border: 1px solid red;
+            height: 50px;
+            width: 120px;
+            border-radius:30px;
+        }
+        #sc-btn{
+            position:absolute;
+            height: 51px;
+            width: 51px;
+            border-radius: 100%;
+            border: 1px solid rgb(14, 1, 10);
+            background-color: white;
+            
+            animation-duration: 3s;
+        }
+        .add-Animation{
+            animation-name:example;
+        }
+
+        @keyframes example {
+  0%   {left:0px; top:5px;}
+  25%  {left:70px; top:5px;}
+}
+        .light-btn{
+            margin-top: 2px;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            /* border: 1px solid rgb(196, 235, 26); */
+            background-color: rgb(234, 247, 59);
+            background-image: url("./day-mode.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .dark-btn{
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            /* border: 1px solid tomato; */
+            background-image: url("./night-mode\ \(2\).png");
+            background-color: rgb(19, 19, 26);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main-text{
+            color: black;
+            font-size: 100px;
+            font-weight: bold;
+        }
+        .red-text {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="button">
+            <div class="scroll-btn" id="sc-btn"></div>
+            <div class="light-btn"></div>
+            <div class="dark-btn"></div>
+        </div>
+          <p class="main-text">
+            Click on the Toggle Button
+          </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
