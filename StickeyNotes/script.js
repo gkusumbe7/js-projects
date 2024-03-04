@@ -30,9 +30,8 @@ function addNotes(){
     })
 }
 
-
-
-
 btn.addEventListener('click' ,addNotes);
 
-
+color.addEventListener('change',function(){
+    text.style.backgroundColor = color.value;
+})
