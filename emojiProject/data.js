@@ -22748,13 +22748,14 @@ const emojiList = [
 
 
   const productsData = [
+
     {
       id: 1,
       name: "Laptop",
       category: "Electronics",
       price: 999.99,
       stock: 50,
-      imgURL: "https://example.com/laptop.jpg"
+      imgURL: "https://m.media-amazon.com/images/I/61+r3+JstZL._AC_UF1000,1000_QL80_.jpg"
     },
     {
       id: 2,
@@ -22762,7 +22763,7 @@ const emojiList = [
       category: "Electronics",
       price: 699.99,
       stock: 100,
-      imgURL: "https://example.com/smartphone.jpg"
+      imgURL: "https://shorturl.at/glwR9"
     },
     {
       id: 3,
@@ -22770,383 +22771,423 @@ const emojiList = [
       category: "Electronics",
       price: 99.99,
       stock: 200,
-      imgURL: "https://example.com/headphones.jpg"
+      imgURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVlzpQcNhIBi57EOjfGQklQCJaa5468Vzhw&usqp=CAU"
     },
     {
       id: 4,
-      name: "Book",
-      category: "Books",
-      price: 19.99,
-      stock: 150,
-      imgURL: "https://example.com/book.jpg"
-    },
-    {
-      id: 5,
-      name: "T-shirt",
-      category: "Clothing",
-      price: 29.99,
-      stock: 300,
-      imgURL: "https://example.com/tshirt.jpg"
-    },
-    {
-      id: 6,
-      name: "Desk Lamp",
-      category: "Home & Kitchen",
-      price: 39.99,
-      stock: 75,
-      imgURL: "https://example.com/desklamp.jpg"
-    },
-    {
-      id: 7,
       name: "Digital Camera",
       category: "Electronics",
       price: 299.99,
       stock: 30,
-      imgURL: "https://example.com/camera.jpg"
+      imgURL: "https://rukminim2.flixcart.com/image/312/312/k9oj8280/dslr-camera/y/h/2/coolpix-coolpix-p950-nikon-original-imafrexf5pw6q8ug.jpeg?q=70"
     },
     {
-      id: 8,
-      name: "Backpack",
-      category: "Accessories",
-      price: 49.99,
-      stock: 100,
-      imgURL: "https://example.com/backpack.jpg"
-    },
-    {
-      id: 9,
-      name: "Sneakers",
-      category: "Footwear",
-      price: 79.99,
-      stock: 200,
-      imgURL: "https://example.com/sneakers.jpg"
-    },
-    {
-      id: 10,
-      name: "Yoga Mat",
-      category: "Fitness",
-      price: 24.99,
-      stock: 150,
-      imgURL: "https://example.com/yogamat.jpg"
-    },
-    {
-      id: 11,
+      id: 5,
       name: "Wireless Mouse",
       category: "Electronics",
       price: 29.99,
       stock: 80,
-      imgURL: "https://example.com/wirelessmouse.jpg"
+      imgURL: "https://rukminim2.flixcart.com/image/416/416/xif0q/mouse/g/k/j/toad-ii-por1784-portronics-original-imagvz876zumuwje.jpeg?q=70&crop=false"
     },
     {
-      id: 12,
-      name: "Notebook",
-      category: "Stationery",
-      price: 9.99,
-      stock: 200,
-      imgURL: "https://example.com/notebook.jpg"
-    },
-    {
-      id: 13,
-      name: "Sunglasses",
-      category: "Accessories",
-      price: 49.99,
-      stock: 150,
-      imgURL: "https://example.com/sunglasses.jpg"
-    },
-    {
-      id: 14,
-      name: "Kitchen Knife Set",
-      category: "Home & Kitchen",
-      price: 69.99,
-      stock: 100,
-      imgURL: "https://example.com/knifeset.jpg"
-    },
-    {
-      id: 15,
+      id: 6,
       name: "Bluetooth Speaker",
       category: "Electronics",
       price: 79.99,
       stock: 120,
-      imgURL: "https://example.com/bluetoothspeaker.jpg"
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/m/h/s/-original-imaggrf8mfkyyvvj.jpeg?q=70"
+    },
+    {
+      id: 7,
+      name: "Wireless Charger",
+      category: "Electronics",
+      price: 19.99,
+      stock: 150,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/l0h1g280/shopsy-battery-charger/q/h/z/yes-no-charging-cable-color-fit-caliber-2-a-gyc-original-imagc9fwn4tghe4w.jpeg?q=70"
+    },
+    {
+      id: 8,
+      name: "Tablet",
+      category: "Electronics",
+      price: 299.99,
+      stock: 50,
+      imgURL: "https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/j/v/r/-original-imagwk77vzvxrsp3.jpeg?q=70"
+    },
+    {
+      id: 9,
+      name: "Gaming Keyboard",
+      category: "Electronics",
+      price: 89.99,
+      stock: 50,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/keyboard/gaming-keyboard/f/4/t/evofox-fireblade-led-backlit-amkette-original-imagrzmxfs5ua6pz.jpeg?q=70"
+    },
+    {
+      id: 10,
+      name: "Wireless Earphones",
+      category: "Electronics",
+      price: 79.99,
+      stock: 100,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/l0sgyvk0/headphone/e/w/c/buds-z2-oneplus-original-imagcg5gfpcg5ndv.jpeg?q=70"
+    },
+    {
+      id: 11,
+      name: "Smartwatch",
+      category: "Electronics",
+      price: 149.99,
+      stock: 40,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/o/t/-original-imagxp8thk2pbaqa.jpeg?q=70"
+    },
+    {
+      id: 12,
+      name: "External Hard Drive",
+      category: "Electronics",
+      price: 129.99,
+      stock: 60,
+      imgURL: "https://rukminim2.flixcart.com/image/312/312/k3dc7m80pkrrdj/external-hard-drive/hdd/7/5/m/wd-wdbhhg0010bbk-eesn-original-imafmkq8ytu6pxgj.jpeg?q=70"
+    },
+    {
+      id: 13,
+      name: "Monitor",
+      category: "Electronics",
+      price: 199.99,
+      stock: 70,
+      imgURL: "https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/f/0/f/-original-imagwwcxv9cqds7d.jpeg?q=70"
+    },
+    {
+      id: 14,
+      name: "Printer",
+      category: "Electronics",
+      price: 149.99,
+      stock: 30,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/printer/e/k/r/-original-imagqsmzectcgpry.jpeg?q=70"
+    },
+    {
+      id: 15,
+      name: "Action Camera",
+      category: "Electronics",
+      price: 179.99,
+      stock: 25,
+      imgURL: "https://rukminim2.flixcart.com/image/312/312/kuyf8nk0/sports-action-camera/p/e/z/black-waterproof-action-camera-with-front-lcd-and-touch-rear-original-imag7yg4haansvzn.jpeg?q=70"
     },
     {
       id: 16,
-      name: "Running Shoes",
-      category: "Footwear",
-      price: 89.99,
-      stock: 180,
-      imgURL: "https://example.com/runningshoes.jpg"
+      name: "Fantasy Novel",
+      category: "Books",
+      price: 14.99,
+      stock: 100,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/k868how0/book/3/2/5/naruto-sasuke-s-story-star-pupil-original-imafq92cqqmry58c.jpeg?q=70"
     },
     {
       id: 17,
-      name: "Watch",
-      category: "Accessories",
-      price: 129.99,
-      stock: 90,
-      imgURL: "https://example.com/watch.jpg"
+      name: "Science Fiction Book",
+      category: "Books",
+      price: 12.99,
+      stock: 120,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/book/k/c/8/the-hidden-hindu-2-original-imagu7s9jzhhbmdr.jpeg?q=70"
     },
     {
       id: 18,
-      name: "Cookbook",
+      name: "Mystery Thriller",
       category: "Books",
-      price: 14.99,
-      stock: 250,
-      imgURL: "https://example.com/cookbook.jpg"
+      price: 16.99,
+      stock: 80,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/s/o/e/kill-joy-the-ya-mystery-thriller-prequel-and-companion-novella-original-imagqftksayhddzn.jpeg?q=70"
     },
     {
       id: 19,
-      name: "Hoodie",
-      category: "Clothing",
-      price: 49.99,
-      stock: 120,
-      imgURL: "https://example.com/hoodie.jpg"
+      name: "Romance Novel",
+      category: "Books",
+      price: 11.99,
+      stock: 150,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/l2qhjm80/regionalbooks/o/2/n/best-seller-romantic-novel-combo-of-ugly-love-and-it-ends-with-original-imageyfx3yzgchv6.jpeg?q=70"
     },
     {
       id: 20,
-      name: "Water Bottle",
-      category: "Fitness",
-      price: 12.99,
-      stock: 300,
-      imgURL: "https://example.com/waterbottle.jpg"
+      name: "Biography",
+      category: "Books",
+      price: 18.99,
+      stock: 90,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/kiqbma80-0/book/t/j/r/maun-muskaan-ki-maar-original-imafygkx9cktmyj4.jpeg?q=70"
     },
     {
-        id: 21,
-        name: "Gaming Keyboard",
-        category: "Electronics",
-        price: 89.99,
-        stock: 50,
-        imgURL: "https://example.com/gamingkeyboard.jpg"
-      },
-      {
-        id: 22,
-        name: "Leather Wallet",
-        category: "Accessories",
-        price: 39.99,
-        stock: 150,
-        imgURL: "https://example.com/leatherwallet.jpg"
-      },
-      {
-        id: 23,
-        name: "Digital Scale",
-        category: "Home & Kitchen",
-        price: 34.99,
-        stock: 80,
-        imgURL: "https://example.com/digitalscale.jpg"
-      },
-      {
-        id: 24,
-        name: "Graphic Novel",
-        category: "Books",
-        price: 17.99,
-        stock: 200,
-        imgURL: "https://example.com/graphicnovel.jpg"
-      },
-      {
-        id: 25,
-        name: "Running Shorts",
-        category: "Clothing",
-        price: 24.99,
-        stock: 100,
-        imgURL: "https://example.com/runningshorts.jpg"
-      },
-      {
-        id: 26,
-        name: "Bluetooth Earbuds",
-        category: "Electronics",
-        price: 59.99,
-        stock: 120,
-        imgURL: "https://example.com/bluetoothearbuds.jpg"
-      },
-      {
-        id: 27,
-        name: "Yoga Blocks",
-        category: "Fitness",
-        price: 19.99,
-        stock: 80,
-        imgURL: "https://example.com/yogablocks.jpg"
-      },
-      {
-        id: 28,
-        name: "Mug",
-        category: "Home & Kitchen",
-        price: 9.99,
-        stock: 250,
-        imgURL: "https://example.com/mug.jpg"
-      },
-      {
-        id: 29,
-        name: "Dress Shirt",
-        category: "Clothing",
-        price: 39.99,
-        stock: 150,
-        imgURL: "https://example.com/dressshirt.jpg"
-      },
-      {
-        id: 30,
-        name: "Resistance Bands",
-        category: "Fitness",
-        price: 29.99,
-        stock: 200,
-        imgURL: "https://example.com/resistancebands.jpg"
-      },
-      {
-        id: 31,
-        name: "Electric Kettle",
-        category: "Home & Kitchen",
-        price: 49.99,
-        stock: 70,
-        imgURL: "https://example.com/electrickettle.jpg"
-      },
-      {
-        id: 32,
-        name: "Travel Backpack",
-        category: "Accessories",
-        price: 69.99,
-        stock: 90,
-        imgURL: "https://example.com/travelbackpack.jpg"
-      },
-      {
-        id: 33,
-        name: "Wireless Earphones",
-        category: "Electronics",
-        price: 79.99,
-        stock: 100,
-        imgURL: "https://example.com/wirelessearphones.jpg"
-      },
-      {
-        id: 34,
-        name: "Cooking Pan Set",
-        category: "Home & Kitchen",
-        price: 99.99,
-        stock: 60,
-        imgURL: "https://example.com/cookingpanset.jpg"
-      },
-      {
-        id: 35,
-        name: "Graphic T-shirt",
-        category: "Clothing",
-        price: 19.99,
-        stock: 180,
-        imgURL: "https://example.com/graphictshirt.jpg"
-      },
-      {
-        id: 36,
-        name: "Desk Organizer",
-        category: "Office Supplies",
-        price: 29.99,
-        stock: 120,
-        imgURL: "https://example.com/deskorganizer.jpg"
-      },
-      {
-        id: 37,
-        name: "Hand Blender",
-        category: "Home & Kitchen",
-        price: 39.99,
-        stock: 50,
-        imgURL: "https://example.com/handblender.jpg"
-      },
-      {
-        id: 38,
-        name: "Gym Bag",
-        category: "Fitness",
-        price: 34.99,
-        stock: 100,
-        imgURL: "https://example.com/gymbag.jpg"
-      },
-      {
-        id: 39,
-        name: "Frying Pan",
-        category: "Home & Kitchen",
-        price: 24.99,
-        stock: 150,
-        imgURL: "https://example.com/fryingpan.jpg"
-      },
-      {
-        id: 40,
-        name: "Running Jacket",
-        category: "Clothing",
-        price: 49.99,
-        stock: 80,
-        imgURL: "https://example.com/runningjacket.jpg"
-      },
-      {
-        id: 41,
-        name: "Coffee Maker",
-        category: "Home & Kitchen",
-        price: 79.99,
-        stock: 40,
-        imgURL: "https://example.com/coffeemaker.jpg"
-      },
-      {
-        id: 42,
-        name: "Soccer Ball",
-        category: "Sports & Outdoors",
-        price: 19.99,
-        stock: 60,
-        imgURL: "https://example.com/soccerball.jpg"
-      },
-      {
-        id: 43,
-        name: "Wireless Charger",
-        category: "Electronics",
-        price: 29.99,
-        stock: 80,
-        imgURL: "https://example.com/wirelesscharger.jpg"
-      },
-      {
-        id: 44,
-        name: "Travel Mug",
-        category: "Travel Accessories",
-        price: 14.99,
-        stock: 100,
-        imgURL: "https://example.com/travelmug.jpg"
-      },
-      {
-        id: 45,
-        name: "Handheld Vacuum",
-        category: "Home & Kitchen",
-        price: 49.99,
-        stock: 30,
-        imgURL: "https://example.com/handheldvacuum.jpg"
-      },
-      {
-        id: 46,
-        name: "Sunscreen",
-        category: "Health & Beauty",
-        price: 9.99,
-        stock: 200,
-        imgURL: "https://example.com/sunscreen.jpg"
-      },
-      {
-        id: 47,
-        name: "Waterproof Backpack",
-        category: "Travel Accessories",
-        price: 69.99,
-        stock: 50,
-        imgURL: "https://example.com/waterproofbackpack.jpg"
-      },
-      {
-        id: 48,
-        name: "Yoga Pants",
-        category: "Fitness",
-        price: 29.99,
-        stock: 120,
-        imgURL: "https://example.com/yogapants.jpg"
-      },
-      {
-        id: 49,
-        name: "Cooking Utensil Set",
-        category: "Home & Kitchen",
-        price: 39.99,
-        stock: 80,
-        imgURL: "https://example.com/cookingutensilset.jpg"
-      },
-      {
-        id: 50,
-        name: "Bluetooth Headphones",
-        category: "Electronics",
-        price: 99.99,
-        stock: 70,
-        imgURL: "https://example.com/bluetoothheadphones.jpg"
-      }
+      id: 21,
+      name: "Self-Help Book",
+      category: "Books",
+      price: 10.99,
+      stock: 200,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/book/n/b/h/vyaktitva-ka-sampoorna-vikas-original-imagwvefreczfbtk.jpeg?q=70"
+    },
+    {
+      id: 22,
+      name: "Historical Fiction",
+      category: "Books",
+      price: 15.99,
+      stock: 120,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/book/l/d/p/raavan-enemy-of-aryavarta-original-imagjygfy9gbejhd.jpeg?q=70"
+    },
+    {
+      id: 23,
+      name: "Cookbook",
+      category: "Books",
+      price: 20.99,
+      stock: 100,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/jz05rww0/book/1/3/9/vegetarian-cookbook-original-imafj3rfbztgscd8.jpeg?q=70"
+    },
+    {
+      id: 24,
+      name: "Art Book",
+      category: "Books",
+      price: 22.99,
+      stock: 80,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/kdvzwcw0/sketch-pad/f/r/k/50-a5-sketch-book-50-sheets-set-of-2-5-8-x-8-3-inch-top-spiral-original-imafuzcu6g9hnvzf.jpeg?q=70"
+    },
+    {
+      id: 25,
+      name: "Poetry Collection",
+      category: "Books",
+      price: 9.99,
+      stock: 150,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/kjx6tu80/book/f/y/w/the-phoenix-a-poetry-collection-original-imafzdq3zsqhuqbx.jpeg?q=70"
+    },
+    {
+      id: 26,
+      name: "Running Shoes",
+      category: "Shoes",
+      price: 79.99,
+      stock: 50,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/u/s/7-444-gry-org-bruton-orange-original-imagfp7fzz5ftzfc-bb.jpeg?q=70"
+    },
+    {
+      id: 27,
+      name: "Sneakers",
+      category: "Shoes",
+      price: 89.99,
+      stock: 60,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/j/x/-original-imagsfdvg6qkg94m.jpeg?q=70"
+    },
+    {
+      id: 28,
+      name: "Sandals",
+      category: "Shoes",
+      price: 49.99,
+      stock: 70,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/keekmfk0-0/sandal/f/m/6/f-401-46-fabrush-beige-original-imafv3fhdhzyu9bv.jpeg?q=70"
+    },
+    {
+      id: 29,
+      name: "Boots",
+      category: "Shoes",
+      price: 129.99,
+      stock: 40,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/p/e/o/6-snk-300-wht-6-bruton-white-original-imagtyx9mk5bpvy2.jpeg?q=70"
+    },
+    {
+      id: 30,
+      name: "Flip Flops",
+      category: "Shoes",
+      price: 19.99,
+      stock: 80,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/e/y/r/10-caroon-397bk-397gr-397gry-397br-sosu-multicolor1-original-imagptvk4bwgfyfn.jpeg?q=70"
+    },
+    {
+      id: 31,
+      name: "High Heels",
+      category: "Shoes",
+      price: 99.99,
+      stock: 30,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/c/b/m/2-2hl1147-uunda-fashion-black-original-imagh5akqxehyeuj.jpeg?q=70"
+    },
+    {
+      id: 32,
+      name: "Dress Shoes",
+      category: "Shoes",
+      price: 109.99,
+      stock: 50,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/kpbipow0/shoe/o/o/u/8-fc-6155-brown-08-field-care-brown-original-imag3hfeb9gecuwz.jpeg?q=70"
+    },
+    {
+      id: 33,
+      name: "Loafers",
+      category: "Shoes",
+      price: 69.99,
+      stock: 60,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/x/q/m/6-fashion-star-white-6-hotstyle-white-white-original-imagmf66vhyyepeh.jpeg?q=70"
+    },
+    {
+      id: 34,
+      name: "Slippers",
+      category: "Shoes",
+      price: 29.99,
+      stock: 100,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/x/l/z/5-lotus-04-maroon-5-number-roxid-maroon-original-imagxz2ajq3sfhz3.jpeg?q=70"
+    },
+    {
+      id: 35,
+      name: "Espadrilles",
+      category: "Shoes",
+      price: 59.99,
+      stock: 80,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/o/5/q/-original-imagsrmnytaqmkfn.jpeg?q=70"
+    },
+    {
+      id: 36,
+      name: "Hiking Boots",
+      category: "Shoes",
+      price: 149.99,
+      stock: 20,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/q/z/q/-original-imagtg6ygcynshd2.jpeg?q=70"
+    },
+    {
+      id: 37,
+      name: "Wedges",
+      category: "Shoes",
+      price: 79.99,
+      stock: 40,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/n/m/m/5-v2-madam-glorious-pink-original-imagytz3fjnsjnyw.jpeg?q=70"
+    },
+    {
+      id: 38,
+      name: "Platform Shoes",
+      category: "Shoes",
+      price: 89.99,
+      stock: 30,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/e/j/x/5-wf-026-5-big-fox-cream-original-imagpkfczzemqbzy.jpeg?q=70"
+    },
+    {
+      id: 39,
+      name: "Running Spikes",
+      category: "Shoes",
+      price: 119.99,
+      stock: 25,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/ks243gw0/shoe/q/o/w/8-8050-black-green-waan-black-green-original-imag5pt8cgcgw4zp.jpeg?q=70"
+    },
+    {
+      id: 40,
+      name: "Rain Boots",
+      category: "Shoes",
+      price: 59.99,
+      stock: 50,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/b/t/-original-imagg7szbhgzmtjx.jpeg?q=70"
+    } ,
+    {
+      id: 41,
+      name: "T-Shirt",
+      category: "Clothes",
+      price: 19.99,
+      stock: 100,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/4/y/7/s-togrrn-d141-tripr-original-imagxqfkypubyggk.jpeg?q=70"
+    },
+    {
+      id: 42,
+      name: "Jeans",
+      category: "Clothes",
+      price: 49.99,
+      stock: 80,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/1/j/u/30-united113-blue-whisker-united-denim-original-imagy5wep5nkswgj.jpeg?q=70"
+    },
+    {
+      id: 43,
+      name: "Hoodie",
+      category: "Clothes",
+      price: 39.99,
+      stock: 70,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/b/f/0/l-ausk0622-ausk-original-imagvfpfszrgzzar.jpeg?q=70"
+    },
+    {
+      id: 44,
+      name: "Dress",
+      category: "Clothes",
+      price: 69.99,
+      stock: 60,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/dress/e/a/p/s-pwd322-purshottam-wala-original-imagm6ywr7vz95sz.jpeg?q=70"
+    },
+    {
+      id: 45,
+      name: "Jacket",
+      category: "Clothes",
+      price: 79.99,
+      stock: 50,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/s/y/f/-original-imagyj95afhctgfh.jpeg?q=70"
+    },
+    {
+      id: 46,
+      name: "Shorts",
+      category: "Clothes",
+      price: 29.99,
+      stock: 90,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/short/g/b/r/3xl-109agrey-hvbk-original-imagh6d2wwgyw8hx.jpeg?q=70"
+    },
+    {
+      id: 47,
+      name: "Skirt",
+      category: "Clothes",
+      price: 34.99,
+      stock: 80,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/skirt/k/o/s/28-1-denim-short-skirt-anshika-fashions-original-imagvz2df9zvfhph.jpeg?q=70"
+    },
+    {
+      id: 48,
+      name: "Blouse",
+      category: "Clothes",
+      price: 24.99,
+      stock: 120,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/blouse/w/0/n/s-na-rbbl314-oomph-original-imagzczyahzhpacq.jpeg?q=70"
+    },
+    {
+      id: 49,
+      name: "Sweater",
+      category: "Clothes",
+      price: 59.99,
+      stock: 70,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/sweater/3/s/u/s-e-white-highneck-fashlook-original-imagkb3dkjbz8fzd.jpeg?q=70"
+    },
+    {
+      id: 50,
+      name: "Pants",
+      category: "Clothes",
+      price: 39.99,
+      stock: 100,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/o/a/0/34-pic-pt190e044-indiclub-original-imagtyu53sh87ahb.jpeg?q=70"
+    },
+    {
+      id: 51,
+      name: "Coat",
+      category: "Clothes",
+      price: 99.99,
+      stock: 40,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/coat/h/3/8/s-ck-unisex-half-sleeves-lab-coat-cloth-king-original-imagpzmfpgxnfqva.jpeg?q=70"
+    },
+    {
+      id: 52,
+      name: "Swimsuit",
+      category: "Clothes",
+      price: 34.99,
+      stock: 60,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/swimsuit/i/m/o/xxl-8523-swimming-finecreations-original-imagpedfaxuhhnwk.jpeg?q=70"
+    },
+    {
+      id: 53,
+      name: "Polo Shirt",
+      category: "Clothes",
+      price: 29.99,
+      stock: 120,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/p/b/o/xl-hk-shirt-1277-maroon-hookstep-original-imagwfyxrrsgpfvp.jpeg?q=70"
+    },
+    {
+      id: 54,
+      name: "Tank Top",
+      category: "Clothes",
+      price: 14.99,
+      stock: 150,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/top/d/j/j/m-ribtop1-sl0011-riverhill-original-imagudjzsyeexc4s.jpeg?q=70"
+    },
+    {
+      id: 55,
+      name: "Socks",
+      category: "Clothes",
+      price: 9.99,
+      stock: 200,
+      imgURL: "https://rukminim2.flixcart.com/image/612/612/xif0q/sock/r/6/p/free-12-nt-ankle-socks-mix4-12p-5-krijo-original-imagn6thjwfrcydj.jpeg?q=70"
+    }
   ];
   
