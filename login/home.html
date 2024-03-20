@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* CSS to style links */
+        /* Set color for unvisited links */
+        a {
+            color: blue;
+            text-decoration: none;
+            /* Removes default underline */
+        }
+
+        /* Set color for visited links */
+        a:visited {
+            color: purple;
+        }
+
+        /* Set color for links on hover */
+        a:hover {
+            color: red;
+        }
+
+        /* Set color for links when clicked */
+        a:active {
+            color: green;
+        }
+
+        /* Styles for the pop-up */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    </style>
+</head>
+<body>
+    
+<!-- Profile link -->
+<a href="#" id="profile-link">Click to view profile</a>
+
+<!-- Profile pop-up -->
+<div class="popup" id="profile-popup">
+    <!-- Profile content -->
+    <!-- This could be dynamically loaded content or static HTML -->
+    <h2>User Profile</h2>
+    <p>Profile information goes here.</p>
+</div>
+
+<script>
+    // Get reference to the profile link and pop-up
+    const profileLink = document.getElementById('profile-link');
+    const profilePopup = document.getElementById('profile-popup');
+
+    // Add click event listener to the profile link
+    profileLink.addEventListener('click', function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+        // Display the profile pop-up
+        profilePopup.style.display = 'block';
+    });
+
+    // Add click event listener to the document to close the pop-up if clicked outside of it
+    document.addEventListener('click', function(event) {
+        // Check if the click is outside of the pop-up
+        if (!profilePopup.contains(event.target) && event.target !== profileLink) {
+            // Hide the pop-up
+            profilePopup.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
