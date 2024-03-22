@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage Example </h1>
+    <h2>Exmple No. 01 </h2>
+    
+    <div>
+        <h4> First Name :- <span class="name"></span>  </h4>
+        <h4> Last  Name :- <span class="surname"></span>  </h4>
+        <h4> Mobile Number :- <span class="mobileNumber"></span>  </h4>    
+    </div>
+
+    <div>
+        <input type="text" id="firstName" placeholder="Enter Firt Name">
+        <input type="text" id="lastName" placeholder="Enter Last Name">
+        <input type="text" id="mobileNumber" placeholder="Enter Mobile Number">
+    </div>
+    <br><br>
+    <div>
+        <textarea name="textarea" id="textAreaInput" cols="30" rows="10"></textarea>
+    </div>
+</body>
+<script>
+
+
+ let name = document.querySelector(".name");
+ let surname= document.querySelector(".surname");
+ let mobileNumber = document.querySelector(".mobileNumber");
+
+
+
+ let inputName = document.getElementById( "firstName" );
+ let inputLast = document.getElementById( "lastName" );
+ let inputMobileNumber = document.getElementById("mobileNumber");
+ let textAreaInput = document.getElementById( "textAreaInput" ) ;
+
+
+//   name.innerText = localStorage.name;
+//  surname.innerText = localStorage.surname;
+//  cityname.innerText = localStorage.city;
+
+
+
+//     inputName.addEventListener("input",(e)=>{
+//         console.log(e.target.value);
+//         localStorage.name = e.target.value;
+//         name.innerText = localStorage.name;
+//     })
+
+// For Name 
+ name.innerText = localStorage.getItem('name');
+
+ inputName.addEventListener("input" , (e)=>{
+    localStorage.setItem('name' , e.target.value);
+
+      name.innerText =  localStorage.getItem('name');
+ });
+
+//  For Surname
+   surname.innerText = localStorage.getItem('surname');
+   inputLast.addEventListener("input", (e)=>{
+       localStorage.setItem("surname"  , e.target.value) ;
+        surname.innerText = localStorage.getItem('surname');
+   });
+
+   
+//    For Mobile Number
+   mobileNumber.innerText =  localStorage.getItem("mobileNumber");
+   inputMobileNumber.addEventListener("input", (e)=>{
+       localStorage.setItem("mobileNumber", e.target.value);
+       mobileNumber.innerText = localStorage.getItem("mobileNumber");
+   })
+
+//    For textArea
+   textAreaInput.innerText = localStorage.getItem("textAreaInputIs");
+   textAreaInput.addEventListener("input" , (e)=>{
+      localStorage.setItem("textAreaInputIs" , e.target.value);
+      textAreaInput.innerText = localStorage.getItem("textAreaInputIs");
+   })
+ 
+</script>
+</html>
