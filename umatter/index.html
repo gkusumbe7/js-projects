@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 384px;
+            width: 384px;
+            border:1px solid black;
+            font-size:22px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+        .dateTime{
+        text-align: left;
+        margin: 0;
+        
+        }
+        .heading{
+            text-align: center;
+            margin:10px;
+            font-size:24px;
+            font-weight: bold;
+        }
+        .fabric-qty{
+            margin:12px 5px 15px 5px;
+            display: flex;
+            justify-content: space-between;
+            text-wrap:wrap;
+        }
+        .gross-wt{
+            margin:12px 5px 12px 5px;
+            /* margin: 0; */
+        }
+        .ref-brNo{
+            align-items: center;
+            /* margin:10px 5px 10px 5px; */
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .barcodeImg{
+            margin:0px 5px 0px 5px;
+            /* border: 1px solid black; */
+            width:95%;
+            height:25%;
+        }
+        .ref{
+            /* width:50%; */
+            /* border: 1px solid black; */
+            /* text-wrap: wrap; */
+        }
+
+        .barcode{
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+        <div  class="container">
+                <p class="dateTime"><span>2024-04-01</span> <span>17:37:06</span></p>
+                <p class="heading">INTEGRAL DE EMPAQUES S.A.S KKKKK LLLLL</p>
+                <div class="fabric-qty">
+                    <span>Fabric:F-100-10-white</span>
+                    <span>Qty. :100000 Mtr</span>
+                </div>
+                <p class="gross-wt">
+                    Gross Wt.:10715Kg, Tare Wt.:10Kg, Net Wt.:705Kg    
+                </p>
+                <div class="ref-brNo">
+                    <span class="ref">Ref.: test 11t klju est 11test 111111</span>
+                </div>
+                <span class="barcode">1011711792560</span>
+                <img class="barcodeImg" src="https://tse3.mm.bing.net/th?id=OIP.1bIYj46aO6guRb_b0nuxHAHaC4&pid=Api&P=0&h=220" alt="barcodeImg">
+        </div>
+</body>
+</html>
