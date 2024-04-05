@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <style>
+        #controls {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Simple Music Player</h1>
+    <!-- <audio id="audio" controls></audio> -->
+    
+    <div id="controls">
+        <button onclick="previousTrack()" id="previous">Previous</button>
+        <button onclick="play()">Play</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="nextTrack()">Next</button>
+        Volume: <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="changeVolume(this.value)">
+    </div>
+
+    <div>
+        <progress id="progressBar" value="0" max="1"></progress>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const volumeControl = document.getElementById('volumeControl');
+        const progressBar = document.getElementById('progressBar');
+
+        let currentSong = 1;
+
+        function play() {
+            audio.play();
+        }
+
+        function pause() {
+            audio.pause();
+        }
+
+        function stop() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+
+        function changeVolume(volume) {
+            audio.volume = volume;
+        }
+
+        function loadSong(songNumber) {
+            audio.src =`./Ve Haniya(PagalWorld.com.cm).mp3`;
+            play();
+        }
+
+        function previousTrack() {
+            currentSong--;
+            if (currentSong < 1) {
+                currentSong = 3; // Assuming you have 3 songs
+            }
+            loadSong(currentSong);
+        }
+
+        function nextTrack() {
+            currentSong++;
+            if (currentSong > 3) {
+                currentSong = 1; // Assuming you have 3 songs
+            }
+            loadSong(currentSong);
+        }
+
+        // Update progress bar as the audio plays
+        audio.addEventListener('timeupdate', function() {
+            const currentTime = audio.currentTime;
+            const duration = audio.duration;
+            if (!isNaN(duration)) {
+                progressBar.value = currentTime / duration;
+            }
+        });
+
+        // Seek to the clicked position in the progress bar
+        progressBar.addEventListener('click', function(e) {
+            const percent = e.offsetX / this.offsetWidth;
+            audio.currentTime = percent * audio.duration;
+        });
+
+        // Load the first song when the page loads
+        window.onload = function() {
+            loadSong(currentSong);
+        };
+
+        // Cycle through songs
+        audio.addEventListener('ended', function() {
+            nextTrack();
+        });
+    </script>
+</body>
+</html>
